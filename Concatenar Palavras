@@ -1,0 +1,13 @@
+def nomeConc():
+    global nome, sobrenome,tamnome, tamsobrenome, frase, frase2, res
+    nome = input("Informe seu nome:")
+    sobrenome = input("Informe seu sobrenome:")
+    tamnome = len(nome)
+    tamsobrenome = len(sobrenome)
+    frase = nome[:int(tamnome/tamnome)]
+    frase2 = sobrenome[:int(tamsobrenome/tamsobrenome)]
+    res = frase[-1]+frase2[-1]
+    return res
+nomeConc()
+print("Seu nome é {} {}".format(nome,sobrenome))
+print(res+'@alcoritmo.unisc.br')
