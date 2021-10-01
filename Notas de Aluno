@@ -1,0 +1,28 @@
+programa = input("deseja informar notas de um aluno? (S) - Sim / (N) - Não")
+while (programa == 'S'):
+    nome = input("Informe seu nome:")
+    nota = float(input("informa a nota do aluno:"))
+    if (nota >= 0 and nota <= 2.9):
+        conceito = 'E'
+        print("Nome do Aluno é {}  a nota é {} e o cocenito é {}:".format(nome, nota, conceito))
+    else:
+        if (nota >= 3 and nota <= 4.9):
+            conceito = 'D'
+            print("Nome do Aluno é {}  a nota é {} e o cocenito é {}:".format(nome, nota, conceito))
+        else:
+            if(nota >= 5 and nota <= 6.9):
+                conceito = 'C'
+                print("Nome do Aluno é {}  a nota é {} e o cocenito é {} :".format(nome, nota, conceito))
+            else:
+                if(nota >= 7 and nota <= 8.9):
+                    conceito = 'B'
+                    print("Nome do Aluno é {}  a nota é {} e o cocenito é {}:".format(nome, nota, conceito))
+                else:
+                    if (nota >= 9 and nota <= 10):
+                        conceito = 'A'
+                        print("Nome do Aluno é {}  a nota é {} e o cocenito é {}:".format(nome, nota, conceito))
+                    else:
+                        print("nota inválida")
+
+    programa = input("deseja informar notas de um aluno? (S) - Sim / (N) - Não")
+print("Programa Encerrado!")
